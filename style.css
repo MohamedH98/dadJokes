@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --clr-main: #e85d04;
+    --clr-light: #ffba08;
+}
+
+body {
+    background-color: var(--clr-main);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    overflow-y: hidden;
+}
+
+.panel-container {
+    background-color: var(--clr-light);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+.input {
+    padding: 10px 20px;
+    font-size: .8em;
+}
+
+.jokes {
+    list-style: none;
+    text-align: center;
+
+    padding-inline-start: 0;
+}
+
+.joke {
+    text-align: center;
+    
+}
+
+h3 {
+    font-size: .6em;
+}
+.form-button {
+    border-radius: 5%;
+    background-color: #e85d04;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 300ms ease;
+    outline: none;
+    font-weight: bold;
+}
+
+.form-button:hover {
+    transform: translateY(-.25em);
+    box-shadow: 0 0.6em 0.8em -0.4em #6a040f;
+
+}
+
